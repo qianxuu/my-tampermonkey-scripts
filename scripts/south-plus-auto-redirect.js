@@ -1,6 +1,6 @@
 // ==UserScript==
-// @name        南 + 自动跳转
-// @description 南 + 自动跳转
+// @name        南 + 自动跳转到主域名
+// @description 防止需要重复登录
 // @author      qianxu
 // @version     1.1.0
 // @match       https://*.north-plus.net/*
