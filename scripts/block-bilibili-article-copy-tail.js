@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        阻止哔哩哔哩专栏文章复制时添加小尾巴
-// @description 阻止哔哩哔哩专栏文章复制时添加小尾巴
+// @description 阻止添加作者出处的小尾巴
 // @author      qianxu
 // @version     1.1.0
 // @match       https://*.bilibili.com/read/*
