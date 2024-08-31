@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        移除哔哩哔哩直播马赛克
-// @description 移除直播间的马赛克遮挡
+// @description 移除常见于游戏分区的马赛克
 // @author      qianxu
 // @version     1.0.0
 // @match       https://live.bilibili.com/*
