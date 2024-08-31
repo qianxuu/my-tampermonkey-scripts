@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        虎牙直播自动最高画质
-// @description 虎牙直播自动最高画质
+// @description 自动选择最高画质
 // @author      qianxu
 // @version     1.1.0
 // @match       https://*.huya.com/*
