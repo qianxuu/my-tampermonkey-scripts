@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name        南 + 自动跳转到主域名
-// @description 防止需要重复登录
+// @description 避免需要重复登录，自动跳转到主域名桌面版
 // @author      qianxu
-// @version     1.1.0
+// @version     1.1.1
 // @match       https://*.north-plus.net/*
 // @match       https://*.south-plus.org/*
 // @match       https://*.spring-plus.net/*
@@ -12,8 +12,8 @@
 // @match       https://*.blue-plus.net/*
 // @icon        https://south-plus.net/favicon.ico
 // @namespace   south-plus-auto-redirect
-// @grant       none
 // @license     MIT
+// @grant       none
 // ==/UserScript==
 
 const { hostname, pathname, search } = location

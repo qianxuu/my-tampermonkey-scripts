@@ -2,17 +2,17 @@
 // @name        去他妈的大会员彩色弹幕
 // @description 将大会员彩色弹幕改回默认颜色或彻底屏蔽
 // @author      qianxu
-// @version     3.1.0
+// @version     3.1.1
 // @match       https://*.bilibili.com/video/*
 // @match       https://*.bilibili.com/list/*
 // @match       https://*.bilibili.com/bangumi/play/*
 // @icon        https://www.bilibili.com/favicon.ico
 // @namespace   https://greasyfork.org/scripts/467808
+// @license     MIT
 // @grant       GM_getValue
 // @grant       GM_setValue
 // @grant       GM_deleteValue
 // @grant       GM_registerMenuCommand
-// @license     MIT
 // ==/UserScript==
 
 // 读取配置
