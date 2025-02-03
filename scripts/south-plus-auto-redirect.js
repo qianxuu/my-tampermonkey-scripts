@@ -2,7 +2,7 @@
 // @name        南 + 自动跳转到主域名
 // @description 避免需要重复登录，自动跳转到主域名桌面版
 // @author      qianxu
-// @version     1.2.0
+// @version     1.2.1
 // @match       https://*.north-plus.net/*
 // @match       https://*.south-plus.org/*
 // @match       https://*.spring-plus.net/*
