@@ -11,6 +11,7 @@
 // @match       https://*.east-plus.net/*
 // @match       https://*.blue-plus.net/*
 // @match       https://*.snow-plus.net/*
+// @match       https://*.level-plus.net/*
 // @icon        https://south-plus.net/favicon.ico
 // @namespace   south-plus-auto-redirect
 // @license     MIT
