@@ -2,7 +2,7 @@
 // @name        去他妈的大会员彩色弹幕
 // @description 将大会员彩色弹幕改回默认颜色或彻底屏蔽
 // @author      qianxu
-// @version     3.1.1
+// @version     3.1.2
 // @match       https://*.bilibili.com/video/*
 // @match       https://*.bilibili.com/list/*
 // @match       https://*.bilibili.com/bangumi/play/*
