@@ -6,6 +6,7 @@
 // @match       https://*.bilibili.com/video/*
 // @match       https://*.bilibili.com/list/*
 // @match       https://*.bilibili.com/bangumi/play/*
+// @match       https://*.bilibili.com/festival/*
 // @icon        https://www.bilibili.com/favicon.ico
 // @namespace   https://greasyfork.org/scripts/467808
 // @license     MIT
