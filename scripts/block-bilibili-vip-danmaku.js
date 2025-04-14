@@ -2,7 +2,7 @@
 // @name        去他妈的大会员彩色弹幕
 // @description 将大会员彩色弹幕改回默认颜色或彻底屏蔽
 // @author      qianxu
-// @version     3.1.2
+// @version     3.1.3
 // @match       https://*.bilibili.com/video/*
 // @match       https://*.bilibili.com/list/*
 // @match       https://*.bilibili.com/bangumi/play/*
@@ -43,8 +43,8 @@ const textShadow = (() => {
 // 插入样式
 const styleElement = document.createElement('style')
 if (blockVipDm) {
-  styleElement.innerHTML = '.bili-dm-vip,.bili-danmaku-x-dm-vip{display:none}'
+  styleElement.innerHTML = '.bili-danmaku-x-dm:has(.bili-danmaku-x-dm-vip,.bili-danmaku-x-colorful){display:none}'
 } else {
-  styleElement.innerHTML = `.bili-dm,.bili-danmaku-x-dm{--textShadow:${textShadow}}.bili-dm-vip,.bili-danmaku-x-dm-vip{background-image:none !important;text-shadow:inherit !important}`
+  styleElement.innerHTML = `.bili-danmaku-x-dm:has(.bili-danmaku-x-dm-vip,.bili-danmaku-x-colorful){--textShadow:${textShadow}}.bili-danmaku-x-dm-vip,.bili-danmaku-x-colorful{background-image:none!important;text-shadow:inherit!important}`
 }
 document.body.appendChild(styleElement)
