@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name        移除哔哩哔哩直播马赛克
-// @description 移除常见于游戏分区的马赛克
+// @name        移除哔哩哔哩直播遮罩
+// @description 移除哔哩哔哩直播中的水印和马赛克遮罩
 // @author      qianxu
-// @version     1.0.2
+// @version     1.1.0
 // @match       https://live.bilibili.com/*
 // @icon        https://www.bilibili.com/favicon.ico
 // @namespace   remove-bilibili-live-mask
@@ -11,11 +11,14 @@
 // ==/UserScript==
 
 (() => {
-	const removeMask = setInterval(() => {
+	const removeElements = setInterval(() => {
+		// 移除水印
+		document.querySelector(".web-player-icon-roomStatus")?.remove();
+		// 移除马赛克
 		document.querySelector("#web-player-module-area-mask-panel")?.remove();
 	}, 1000);
 
 	setTimeout(() => {
-		clearInterval(removeMask);
+		clearInterval(removeElements);
 	}, 10000);
 })();
