@@ -114,7 +114,6 @@
 						"画质列表:",
 						Array.from(options).map((opt) => opt.textContent.trim()),
 					);
-					
 					// 破解需要登录/扫码才能看高画质的限制
 					// 虎牙页面自带 jQuery，通过修改绑定的 data 属性来绕过限制
 					if (typeof window.$ !== "undefined") {
