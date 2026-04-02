@@ -114,6 +114,18 @@
 						"画质列表:",
 						Array.from(options).map((opt) => opt.textContent.trim()),
 					);
+					
+					// 破解需要登录/扫码才能看高画质的限制
+					// 虎牙页面自带 jQuery，通过修改绑定的 data 属性来绕过限制
+					if (typeof window.$ !== "undefined") {
+						window.$(list).children("li").each(function () {
+							const hasEnjoyBtn = this.querySelector(".bitrate-right-btn, .common-enjoy-btn");
+							const itemData = window.$(this).data("data");
+							if (hasEnjoyBtn && itemData) {
+								itemData.status = 0;
+							}
+						});
+					}
 
 					const topOption = options[0];
 					log("切换到最高画质:", topOption.textContent.trim());
