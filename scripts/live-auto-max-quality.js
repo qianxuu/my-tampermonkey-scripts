@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        直播平台自动选择最高画质
 // @namespace   live-auto-max-quality
-// @version     2.0.0
+// @version     2.0.1
 // @description	看直播时自动选择最高画质
 // @author      qianxu
 // @match       https://*.huya.com/*
@@ -114,16 +114,18 @@
 						"画质列表:",
 						Array.from(options).map((opt) => opt.textContent.trim()),
 					);
-					// 破解需要登录/扫码才能看高画质的限制
-					// 虎牙页面自带 jQuery，通过修改绑定的 data 属性来绕过限制
-					if (typeof window.$ !== "undefined") {
-						window.$(list).children("li").each(function () {
-							const hasEnjoyBtn = this.querySelector(".bitrate-right-btn, .common-enjoy-btn");
-							const itemData = window.$(this).data("data");
+
+					// 解锁需要登录/扫码的画质
+					if (typeof window.$ === "function") {
+						for (const option of options) {
+							const hasEnjoyBtn = option.querySelector(
+								".bitrate-right-btn, .common-enjoy-btn",
+							);
+							const itemData = window.$(option).data("data");
 							if (hasEnjoyBtn && itemData) {
 								itemData.status = 0;
 							}
-						});
+						}
 					}
 
 					const topOption = options[0];
